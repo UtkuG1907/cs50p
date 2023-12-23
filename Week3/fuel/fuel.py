@@ -2,16 +2,15 @@ while True:
     try:
         fuelfraction = input("Fraciton: ")
 
-        fuel, tank= fuelfraction.split("/")
+        fuel, tank = fuelfraction.split("/")
 
         fuel = int(fuel)
         tank = int(tank)
     except ValueError:
         pass
     else:
-            if fuel<=tank:
-                if tank != 0:
-                    break
+        if fuel <= tank and tank != 0:
+            break
 
 per = fuel / tank * 100
 per = round(per)
