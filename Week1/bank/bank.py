@@ -1,6 +1,6 @@
 greeting = input("Greeting: ")
 
-greeting = greeting.split()[0].lower().strip(","".")
+greeting = greeting.split()[0].lower().strip("," "." "!")
 
 
 if greeting == "hello":
